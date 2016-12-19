@@ -31,7 +31,7 @@
 ## Usage
 * At your project's folder, run:
 
-  `npm gulp` - to apply the performance
+  `gulp` - to apply the performance
 
 * At your browser run:
 
