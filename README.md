@@ -30,9 +30,11 @@ Clone o projeto e faça `npm install` para instalar as dependências.
 
 ## Usage
 * At your project's folder, run:
+
   `npm gulp` - to apply the performance
 
 * At your browser run:
-  `http://localhost:2020` - for the original version
 
+  `http://localhost:2020` - for the original version
+  
   `http://localhost:2020` - for performed version
