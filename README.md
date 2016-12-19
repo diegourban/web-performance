@@ -16,21 +16,23 @@ Clone o projeto e faça `npm install` para instalar as dependências.
 
  * Example for NGINX
   Create a .conf file at your NGINX configuration folder with the content:
-  ```
-  server {
-    listen 2020;
-    root /[some path]/web-performance/site;
-  }
+    ```
+    server {
+      listen 2020;
+      root /[some path]/web-performance/site;
+    }
 
-  server {
-    listen 3030;
-    root /[some path]/web-performance/dist;
-  }
-  ```
+    server {
+      listen 3030;
+      root /[some path]/web-performance/dist;
+    }
+    ```
 
 ## Usage
-`npm gulp` - to apply the performance
+* At your project's folder, run:
+  `npm gulp` - to apply the performance
 
-`http://localhost:2020` - for the original version
+* At your browser run:
+  `http://localhost:2020` - for the original version
 
-`http://localhost:2020` - for performed version
+  `http://localhost:2020` - for performed version
