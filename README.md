@@ -13,8 +13,10 @@
 * Install and configure a local http server:
 
  * Example for NGINX
-    * Install NGINX
-    * Create a .conf file at your NGINX configurations folder with the content:
+    * [Install NGINX](http://nginx.org/en/docs/install.html)
+    * Create a .conf file at your NGINX configuration folder with two server blocks:
+    
+      /etc/nginx/config.d/web-performance.conf
       ```
       server {
         listen 2020;
