@@ -15,19 +15,21 @@ Clone o projeto e faça `npm install` para instalar as dependências.
 * Install and configure a local http server:
 
  * Example for NGINX
-  Create a .conf file at your NGINX configuration folder with the content:
-    ```
-    server {
-      listen 2020;
-      root /[some path]/web-performance/site;
-    }
+    * Install NGINX
+    * Create a .conf file at your NGINX configurations folder with the content:
+      ```
+      server {
+        listen 2020;
+        root /[some path]/web-performance/site;
+      }
 
-    server {
-      listen 3030;
-      root /[some path]/web-performance/dist;
-    }
-    ```
-
+      server {
+        listen 3030;
+        root /[some path]/web-performance/dist;
+      }
+      ```
+    * run NGINX
+    
 ## Usage
 * At your project's folder, run:
 
@@ -37,4 +39,4 @@ Clone o projeto e faça `npm install` para instalar as dependências.
 
   `http://localhost:2020` - for the original version
   
-  `http://localhost:2020` - for performed version
+  `http://localhost:3030` - for performed version
