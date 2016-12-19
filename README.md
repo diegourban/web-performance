@@ -13,8 +13,8 @@
 * Install and configure a local http server:
 
  * Example for NGINX
-    * [Install NGINX](http://nginx.org/en/docs/install.html)
-    * Create a .conf file at your NGINX configuration folder with two server blocks:
+    * [Install NGINX](http://nginx.org/en/docs/install.html);
+    * Create a .conf file at your NGINX configuration folder with two server blocks
     
       /etc/nginx/config.d/web-performance.conf
       ```
@@ -28,7 +28,7 @@
         root /[some path]/web-performance/dist;
       }
       ```
-    * run NGINX
+    * run NGINX;
     
 ## Usage
 * At your project's folder, run:
