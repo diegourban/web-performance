@@ -8,11 +8,12 @@
   `npm install --global gulp-cli`
 
 * Install project dependencies:
+
   `npm install`
 
-* Install and configure a local http server:
+* Install and configure a local http server;
 
- * Example for NGINX
+ * Example for NGINX and Ubuntu
     * [Install NGINX](http://nginx.org/en/docs/install.html);
     * Create a .conf file at your NGINX configuration folder with two server blocks
     
