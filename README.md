@@ -27,6 +27,8 @@
       server {
         listen 3030;
         root /[some path]/web-performance/dist;
+        gzip on;
+        gzip_types text/css application/javascript image/svg+xml;
       }
       ```
     * run NGINX;
