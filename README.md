@@ -18,8 +18,7 @@
     2. Create a [configuration file](https://nginx.org/en/docs/beginners_guide.html#conf_structure) at your NGINX configuration folder
     
       Example: /etc/nginx/config.d/web-performance.conf
-      
-      Content:
+    3. And add this content to your configuration file:  
       ```
       server {
         listen 2020;
@@ -33,7 +32,7 @@
         gzip_types text/css application/javascript image/svg+xml;
       }
       ```
-    3. [Start/Reload NGINX configuration](https://nginx.org/en/docs/beginners_guide.html#control);
+    4. [Start/Reload NGINX configuration](https://nginx.org/en/docs/beginners_guide.html#control);
  
 ## Usage
 1. At your project's folder, run:
