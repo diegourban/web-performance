@@ -13,11 +13,13 @@
 
 3. Install and configure a local http server:
 
- * Example for NGINX and Ubuntu
+ * Example of NGINX and Linux
     1. [Install NGINX](http://nginx.org/en/docs/install.html);
-    2. Create a .conf file at your NGINX configuration folder with two server blocks
+    2. Create a [configuration file](https://nginx.org/en/docs/beginners_guide.html#conf_structure) at your NGINX configuration folder
     
-      /etc/nginx/config.d/web-performance.conf
+      Example: /etc/nginx/config.d/web-performance.conf
+      
+      Content:
       ```
       server {
         listen 2020;
@@ -31,9 +33,7 @@
         gzip_types text/css application/javascript image/svg+xml;
       }
       ```
-    3. start/reload NGINX;
- * Example for other http server:
-    // TODO
+    3. [Start/Reload NGINX configuration](https://nginx.org/en/docs/beginners_guide.html#control);
  
 ## Usage
 1. At your project's folder, run:
