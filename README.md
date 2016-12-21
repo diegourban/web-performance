@@ -3,7 +3,7 @@
 ## Installation
 1. Install gulp globally:
 
-  If you have previously installed a version of gulp globally, please run npm rm --global gulp to make sure your old version doesn't collide with gulp-cli.
+  If you have previously installed a version of gulp globally, please run `npm rm --global gulp` to make sure your old version doesn't collide with gulp-cli.
 
   * `npm install --global gulp-cli`
 
