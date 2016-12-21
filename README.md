@@ -1,21 +1,21 @@
 # Projeto do Curso de Otimização de Performance Web do Alura
 
 ## Installation
-* Install gulp globally:
+1. Install gulp globally:
 
   If you have previously installed a version of gulp globally, please run npm rm --global gulp to make sure your old version doesn't collide with gulp-cli.
 
-  `npm install --global gulp-cli`
+  * `npm install --global gulp-cli`
 
-* Install project dependencies:
+2. Install project dependencies:
 
-  `npm install`
+  * `npm install`
 
-* Install and configure a local http server;
+3. Install and configure a local http server;
 
  * Example for NGINX and Ubuntu
-    * [Install NGINX](http://nginx.org/en/docs/install.html);
-    * Create a .conf file at your NGINX configuration folder with two server blocks
+    1. [Install NGINX](http://nginx.org/en/docs/install.html);
+    2. Create a .conf file at your NGINX configuration folder with two server blocks
     
       /etc/nginx/config.d/web-performance.conf
       ```
@@ -31,15 +31,15 @@
         gzip_types text/css application/javascript image/svg+xml;
       }
       ```
-    * run NGINX;
+    3. start/reload NGINX;
     
 ## Usage
-* At your project's folder, run:
+1. At your project's folder, run:
 
-  `gulp` - to generate the dist version
+  * `gulp` - to generate the dist version
 
-* At your browser run:
+2. At your browser run:
 
-  `http://localhost:2020` - for the original version
+  * `http://localhost:2020` - for the original version
   
-  `http://localhost:3030` - for optimized version
+  * `http://localhost:3030` - for the optimized version
