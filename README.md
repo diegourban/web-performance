@@ -36,10 +36,10 @@
 ## Usage
 * At your project's folder, run:
 
-  `gulp` - to apply the performance
+  `gulp` - to generate the dist version
 
 * At your browser run:
 
   `http://localhost:2020` - for the original version
   
-  `http://localhost:3030` - for performed version
+  `http://localhost:3030` - for optimized version
