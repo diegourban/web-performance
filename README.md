@@ -11,7 +11,7 @@
 
   * `npm install`
 
-3. Install and configure a local http server;
+3. Install and configure a local http server:
 
  * Example for NGINX and Ubuntu
     1. [Install NGINX](http://nginx.org/en/docs/install.html);
@@ -32,7 +32,9 @@
       }
       ```
     3. start/reload NGINX;
-    
+ * Example for other http server:
+    // TODO
+ 
 ## Usage
 1. At your project's folder, run:
 
