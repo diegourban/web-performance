@@ -1,0 +1,48 @@
+- Instalar GAE
+
+- Criar um novo projeto no GAE
+antes de dar init, sugiro já criar o projeto no GAE porque na hora de dar o init e vai pedir pra você fazer login com a sua conta e dar permissão.
+
+Na hora que der permissão o gcloud já vai ver que você tem um projeto criado e vai usá-lo.
+Se você esqueceu de criar o projeto antes, não tem problema.
+Basta ir lá criar o projeto e rodar o gcloud init novamente.
+
+- gcloud init
+siga os passos da configuração para dar as permissões
+e selecionar o seu usuário
+
+ERROR: The [application] field is specified in file [/home/diego/git/web-performance/dist/app.yaml]. This field is not used by gcloud and must be removed. Project name should instead be specified either by `gcloud config set project MY_PROJECT` or by setting the `--project` flag on individual command executions.
+ERROR: (gcloud.app.deploy) Errors occurred while parsing the App Engine app configuration.
+
+ERROR: The [version] field is specified in file [/home/diego/git/web-performance/dist/app.yaml]. This field is not used by gcloud and must be removed. Versions are generated automatically by default but can also be manually specified by setting the `--version` flag on individual command executions.
+ERROR: (gcloud.app.deploy) Errors occurred while parsing the App Engine app configuration.
+
+
+
+- precisei remover o campo application e version do app.yaml da pasta dist e adicionar o id do meu projeto na configuração do gcloud com o comando: gcloud config set project web-performance-153123
+
+- gcloud app deploy
+rodar na pasta onde tem o app.yaml(dist)
+para fazer o deploy, demora um pouco
+
+- gcloud app browse
+para abrir o site no seu navegador
+
+https://web-performance-153123.appspot.com/
+
+https://developers.google.com/speed/pagespeed/insights
+https://www.webpagetest.org/
+
+
+
+https://cloud.google.com/sdk/docs/
+https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
+
+O limite de conexões é por subominio.dominio
+Para paralelizar os recuros, pode ser feito deploy em outro subdominio e atualizar a página para buscar os recursos desejados deste outro subdominio.
+Por exemplo: 
+domínio principal: https://web-performance-153123.appspot.com/
+subdominio principal: https://assets-dot-web-performance-153123.appspot.com/
+
+Para as imagens svg por exemplo, o src pode ser https://assets-dot-web-performance-153123.appspot.com/assets/img/busca.svg
+
