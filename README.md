@@ -1,4 +1,6 @@
-# Projeto do Curso de Otimização de Performance Web do Alura
+# web-performance
+
+Projeto do Curso de Otimização de Performance Web do Alura
 
 ## Installation
 1. Install gulp globally:
