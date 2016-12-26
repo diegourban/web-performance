@@ -1,0 +1,8 @@
+- Minificar arquivos;
+- Gzip;
+- Otimização de imagens;
+- Concatenar CSS/ JS;
+- Usar Sprites;
+- Cache;
+- Inline recursos;
+- Paralelização de requests;
