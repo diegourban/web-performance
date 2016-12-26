@@ -22,14 +22,18 @@
       ```
       server {
         listen 2020;
-        root /[some path]/web-performance/site;
+        root /home/diego/git/web-performance/site;
       }
 
       server {
         listen 3030;
-        root /[some path]/web-performance/dist;
+        root /home/diego/git/web-performance/dist;
         gzip on;
         gzip_types text/css application/javascript image/svg+xml;
+        location /assets {
+		      expires 1y;
+	 	      add_header Cache-Control public;
+	      }
       }
       ```
     4. [Start/Reload NGINX configuration](https://nginx.org/en/docs/beginners_guide.html#control);
