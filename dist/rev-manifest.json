@@ -84,8 +84,10 @@
   "assets/js/footer.js": "assets/js/footer-dcce147624.js",
   "assets/js/home.js": "assets/js/home-4ea2c1acc1.js",
   "assets/js/jquery.js": "assets/js/jquery-0687e2803d.js",
+  "assets/js/lazyload-v2.js": "assets/js/lazyload-v2-3b176a9ffb.js",
+  "assets/js/lazyload.js": "assets/js/lazyload-5d633388f8.js",
   "assets/js/menu.js": "assets/js/menu-96cb4568b6.js",
-  "assets/js/scripts.js": "assets/js/scripts-a189afb911.js",
+  "assets/js/scripts.js": "assets/js/scripts-c7c1a4b3e6.js",
   "assets/js/svg4everybody.js": "assets/js/svg4everybody-263fa738c0.js",
-  "assets/js/video.js": "assets/js/video-db50a451f9.js"
+  "assets/js/video.js": "assets/js/video-3d7b09826a.js"
 }
