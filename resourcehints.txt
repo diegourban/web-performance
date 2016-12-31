@@ -1,0 +1,42 @@
+Resource Hints
+
+DNS-PREFETCH - pede pro navegador resolver o DNS de um certo recurso antecipando o que precisamos dele mais adiante
+<link rel="dns-prefetch" href="//player.vimeo.com">
+<link rel="dns-prefetch" href="//f.vimeocdn.com">
+
+PRECONNECT - além de antecipar o DNS podemos antecipar a conexão; deixa a conexão preparada
+já adianta a resolução DNS e a conexão TCP com aquele servidor
+<link rel="preconnect" href="https://player.vimeo.com">
+<link rel="preconnect" href="https://f.vimeocdn.com">
+<link rel="preconnect" href="https://i.vimeocdn.com">
+Bom usar para vídeo
+
+PREFETCH - antecipa o download e coloca no cache
+Prioridade baixa, navegação futura
+<link rel="prefetch" href="script.js">
+<link rel="prefetch" href="pagina-seguinte/estilo.css">
+Recurso que a chance é alta para a próxima navegação
+
+PRELOAD - antecipa o download e coloca no cache
+Prioridade alta, navegação atual
+<link rel="preload" href="estilo.css" as="style">
+<link rel="preload" href="script.js" as="script">
+<link rel="preload" href="banner2.jpg" as="image">
+<link rel="preload" href="assets/font/opensans/opensans-regular.woff2" as="font" type="font/woff2">
+<link rel="preload" href="assets/font/opensans/opensans-extrabold.woff2" as="font" type="font/woff2">
+<link rel="preload" href="assets/font/opensans/opensans-light.woff2" as="font" type="font/woff2">
+as define a prioridade, sem as é prioridade baixíssima
+Usar para coisas importante
+o atributo type é essencial para que o recurso só seja baixado nos navegadores capazes de entender aquele tipo de recurso. evitando desperdício
+
+PRERENDER - baixa e renderiza em background
+<link rel="prerender" href="pagina.html">
+útil quando tem workflow
+da pra adicionar dinâmico pelo javascript(descobrir o melhor momento)
+input.onfocus = function() {
+	var prerender = document.createElement('link');
+	prerender.rel = 'prerender';
+	prerender.href = 'cadastrado.html';
+	document.head.appendChild(prerender);
+}
+ver google chrome, menu > mais ferramentas > taskmanager

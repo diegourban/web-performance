@@ -9,7 +9,7 @@ handlers:
     upload: index.html
     expiration: 0s
     http_headers:
-      Link: <assets/css/critico-56bf4abb88.css>; rel=preload; as=style, <assets/img/logo-alura-0af2849faf.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo-5d20ac8d24.svg>; rel=preload; as=image
+      Link: <assets/css/critico-38dc2f918a.css>; rel=preload; as=style, <assets/img/logo-alura-0af2849faf.svg>; rel=preload; as=image, <assets/img/background-cidade-fundo-5d20ac8d24.svg>; rel=preload; as=image
 
   - url: /assets
     static_dir: assets
